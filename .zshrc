@@ -1,4 +1,3 @@
-
 _newline=$'\n'
 _lineup=$'\e[1A'
 _linedown=$'\e[1B'
@@ -14,7 +13,7 @@ alias tree3='tree --dirsfirst -F -L 3'
 alias tree4='tree --dirsfirst -F -L 4'
 alias tree5='tree --dirsfirst -F -L 5'
 
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+

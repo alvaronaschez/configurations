@@ -1,6 +1,7 @@
 /*
 !.gitignore
 !.zshrc
+<<<<<<< HEAD
 !.vimrc
 !/.vim
 
@@ -9,4 +10,6 @@
 !/.vim/autoload
 /.vim/autoload/*
 !/.vim/autoload/plug.vim
+=======
+>>>>>>> 29b42401e9bc74f14cd0569992572fbfd20ce612
 
