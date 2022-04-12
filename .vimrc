@@ -1,4 +1,14 @@
 set nocompatible
+set hidden
+let mapleader = ","
+nnoremap ; :
+
+"" Plugins
+call plug#begin()
+Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
+Plug 'preservim/nerdtree'
+call plug#end()
 
 " enable filetype plugins
 filetype plugin on
@@ -7,9 +17,6 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
-
-let mapleader = ","
-nmap <leader><leader> :w<cr> " fast saving
 
 set number " show line numbers
 set showcmd " show command in bottom bar
@@ -22,9 +29,9 @@ set scrolloff=7
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
+" colors
 set termguicolors
-" Enable 256 colors palette in Gnome Terminal
-set t_Co=256
+set t_Co=256 " Enable 256 colors palette
 set background=dark
 colorscheme nord
 syntax on
@@ -36,24 +43,31 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-"""""""""""""""
-" indentation "
-"""""""""""""""
-set tabstop=4   " number of visual spaces per TAB
+" tabs
+set tabstop=4   " number of visual spaces per tab
 set softtabstop=4 " number of spaces in tab when editing
 set expandtab " tabs are spaces 
-
-set shiftwidth=4
+set shiftwidth=4 " number of spaces used for autoindenting
+set shiftround " use multiple of shiftwidth when indenting
 set smarttab
+
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
+" indentation
 set autoindent
+set copyindent " copy the previous indentation on autoindenting
 set smartindent
+
+" searching
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
 
 set showmode
 
-"" Plugins
-call plug#begin()
-Plug 'vim-airline/vim-airline'
-Plug 'arcticicestudio/nord-vim'
-Plug 'preservim/nerdtree'
-call plug#end()
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
