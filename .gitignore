@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!.zshrc
+!.vimrc
+!/.vim
+
+# ignore everything under .vim folder except autoload/plug.vim
+/.vim/*
+!/.vim/autoload
+/.vim/autoload/*
+!/.vim/autoload/plug.vim
+
