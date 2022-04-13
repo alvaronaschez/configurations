@@ -8,6 +8,8 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim' 
+Plug 'dan-t/vim-lvimrc'
 call plug#end()
 
 " enable filetype plugins
@@ -41,7 +43,7 @@ syntax on
 set encoding=utf8
 
 " Use Unix as the standard file type
-set ffs=unix,dos,mac
+set fileformats=unix,dos,mac
 
 " tabs
 set tabstop=4   " number of visual spaces per tab
