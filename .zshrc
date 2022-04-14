@@ -2,8 +2,9 @@ _newline=$'\n'
 _lineup=$'\e[1A'
 _linedown=$'\e[1B'
 
-PROMPT=${_newline}%~${_newline}'🚀 '
-RPROMPT=%{${_lineup}%}%D{'%F %a %T'}%{${_linedown}%}
+PROMPT=%F{33}${_newline}%~${_newline}'🚀 '%f
+#PROMPT=${_newline}%~${_newline}'🚀 '
+RPROMPT=%F{33}%{${_lineup}%}%D{'%F %a %T'}%{${_linedown}%}%f
 
 alias la='ls -a'
 alias ll='ls -l'
