@@ -15,6 +15,11 @@ alias tree3='tree --dirsfirst -F -L 3'
 alias tree4='tree --dirsfirst -F -L 4'
 alias tree5='tree --dirsfirst -F -L 5'
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv" 
+export PATH="$PYENV_ROOT/bin:$PATH" 
+eval "$(pyenv init --path)" 
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
