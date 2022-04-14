@@ -3,6 +3,7 @@
 !.zshrc
 !.vimrc
 !/.vim
+!/.tmux.conf
 
 # ignore everything under .vim folder except autoload/plug.vim
 /.vim/*
