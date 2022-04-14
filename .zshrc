@@ -5,6 +5,8 @@ _linedown=$'\e[1B'
 PROMPT=${_newline}%~${_newline}'🚀 '
 RPROMPT=%{${_lineup}%}%D{'%F %a %T'}%{${_linedown}%}
 
+alias la='ls -a'
+alias ll='ls -l'
 export CLICOLOR=1
 alias tree='tree --dirsfirst -F'
 alias tree1='tree --dirsfirst -F -L 1'
