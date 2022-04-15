@@ -1,7 +1,8 @@
 set nocompatible
 set hidden
-let mapleader = ","
+let mapleader = "\<space>"
 nnoremap ; :
+"set exrc " use local .vimrc files
 
 "" Plugins
 call plug#begin()
@@ -9,8 +10,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim' 
-Plug 'dan-t/vim-lvimrc'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
+
+" jedi remap completions command from <C-Space> to <leader>c
+let g:jedi#completions_command = "<leader>s"
+
+" airline + virtualenv
+let g:airline_section_b = airline#section#create('%{virtualenv#statusline()}')
+
+let g:virtualenv_directory = '~/Workspace' 
 
 " enable filetype plugins
 filetype plugin on
