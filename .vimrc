@@ -1,6 +1,7 @@
 set nocompatible
 set hidden
-let mapleader = "\<space>"
+"let mapleader = "\<space>"
+let mapleader = ","
 nnoremap ; :
 "set exrc " use local .vimrc files
 
@@ -11,16 +12,17 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim' 
 Plug 'jmcantrell/vim-virtualenv'
-Plug 'davidhalter/jedi-vim'
+Plug 'natebosch/vim-lsc'
 call plug#end()
 
-" jedi remap completions command from <C-Space> to <leader>c
-let g:jedi#completions_command = "<leader>s"
+let g:lsc_server_commands = {'python': 'pylsp'}
+"requires pylsp
+"pip install "python-lsp-server[all]"
 
 " airline + virtualenv
 let g:airline_section_b = airline#section#create('%{virtualenv#statusline()}')
 
-let g:virtualenv_directory = '~/Workspace' 
+"let g:virtualenv_directory = '~/Workspace' 
 
 " enable filetype plugins
 filetype plugin on
