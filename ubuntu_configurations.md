@@ -1,4 +1,4 @@
-# UBUNTU CONFIGURATION PROCESS
+# UBUNTU CONFIGURATIONS
 
 ## VSCode
 
@@ -106,6 +106,18 @@ curl https://pyenv.run | bash
     - https://github.com/pyenv/pyenv-installer
     - https://github.com/pyenv/pyenv/wiki#suggested-build-environment
     - https://github.com/pyenv/pyenv/wiki/Common-build-problems
+
+- Some useful commands:
+    ```bash
+    # list available python versions
+    pyenv install --list
+    # install python 3.10.4
+    pyenv install 3.10.4
+    # list all installed python versions
+    pyenv versions
+    # set python 3.10.4 as global version
+    pyenv global 3.10.4
+    ```
 
 
 ## Poetry
