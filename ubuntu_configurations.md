@@ -161,8 +161,8 @@ sudo apt-get install tmux
 ## Zsh
 
 ```bash
-sudo apt update && sudo apt upgrade
-sudo apt install zsh
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install zsh
 chsh -s $(which zsh)
 ```
 - restart the computer
