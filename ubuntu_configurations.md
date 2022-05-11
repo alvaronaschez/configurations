@@ -194,14 +194,41 @@ pip install "python-lsp-server[all]"
     curl -s "https://get.sdkman.io" | bash
     ```
 
+## Java
+```bash
+sdk install java 11.0.15-zulu
+```
+
 ## Clojure
 
 - (using sdkman)
 
-## Leiningen
+## [Leiningen](https://leiningen.org/)
 
-- (clojure tool, using sdkman)
+```
+# requires java
+sdk install leiningen
+```
 
+- usage:
+
+    ```bash
+    # open repl
+    lein repl
+    ```
+
+## [Elixir](https://elixir-lang.org/install.html#gnulinux)
+
+```bash
+# Add Erlang Solutions repository:
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+# update repos
+sudo apt-get update
+# Install the Erlang/OTP platform and all of its applications:
+sudo apt-get install esl-erlang
+# Install Elixir:
+sudo apt-get install elixir
+```
 ## Postman
 
 ```bash
