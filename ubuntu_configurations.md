@@ -168,6 +168,12 @@ chsh -s $(which zsh)
 - restart the computer
 - Ohmyzsh vs .zshrc ??
 
+## Rust
+- follow the instrunctions from [the rust web page](https://www.rust-lang.org/tools/install):
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
+
 ## Pgadmin4
 
 - https://www.pgadmin.org/download/pgadmin-4-apt/
@@ -207,3 +213,14 @@ sudo apt install gnome-tweak-tool
 ```
 - Tweaks > General > Suspend when laptop lid is closed > off
 
+## Spotify
+
+```bash
+sudo snap install spotify
+```
+
+## Telegram
+
+```bash
+sudo snap install telegram-desktop
+```
