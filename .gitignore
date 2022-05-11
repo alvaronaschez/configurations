@@ -4,6 +4,7 @@
 !.vimrc
 !/.vim
 !/.tmux.conf
+!/ubuntu_configurations.md
 
 # ignore everything under .vim folder except autoload/plug.vim
 /.vim/*
