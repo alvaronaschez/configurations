@@ -169,7 +169,9 @@ chsh -s $(which zsh)
 - Ohmyzsh vs .zshrc ??
 
 ## Rust
-- follow the instrunctions from [the rust web page](https://www.rust-lang.org/tools/install):
+
+- follow the instructions from [the official web page](https://www.rust-lang.org/tools/install):
+
     ```bash
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     ```
@@ -186,7 +188,11 @@ pip install "python-lsp-server[all]"
 
 ## Sdkman
 
-- JVM tool
+- follow the instructions from [the official web page](https://sdkman.io/install)
+
+    ```bash
+    curl -s "https://get.sdkman.io" | bash
+    ```
 
 ## Clojure
 
