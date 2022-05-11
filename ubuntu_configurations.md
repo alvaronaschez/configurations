@@ -12,7 +12,7 @@
 sudo apt-get update
 # install git
 sudo apt-get install git
-# configure email (optional)
+# configure email
 git config --global user.email "alvaro.sanchez@fakemail.com"
 ```
 
