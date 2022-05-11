@@ -35,9 +35,7 @@ git clone git@github.com:alvaronaschez/configurations.git
 git clone git@github.com:alvaronaschez/books.git
 ```
 
-## Docker
-
-- Follow the instructions in https://docs.docker.com/engine/install/ubuntu/
+## [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
 ```bash
 # Set up the repository
@@ -120,13 +118,11 @@ curl https://pyenv.run | bash
     ```
 
 
-## Poetry
+## [Poetry](https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
-- Follow the [official installation instructions](https://python-poetry.org/docs/master/#installing-with-the-official-installer):
-
-    ```bash
-    curl -sSL https://install.python-poetry.org | python3 -
-    ```
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
 
 - copy the following lines in `.bashrc` and `.zshrc`:
 
@@ -147,10 +143,7 @@ curl https://pyenv.run | bash
 sudo apt install vim-gtk3
 ```
 
-## Helix
-
-- https://docs.helix-editor.com/install.html#build-from-source
-
+## [Helix](https://docs.helix-editor.com/install.html#build-from-source)
 
 ## Tmux
 
@@ -168,13 +161,11 @@ chsh -s $(which zsh)
 - restart the computer
 - Ohmyzsh vs .zshrc ??
 
-## Rust
+## [Rust](https://www.rust-lang.org/tools/install)
 
-- follow the instructions from [the official web page](https://www.rust-lang.org/tools/install):
-
-    ```bash
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    ```
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ## Pgadmin4
 
@@ -186,15 +177,14 @@ chsh -s $(which zsh)
 pip install "python-lsp-server[all]"
 ```
 
-## Sdkman
+## [Sdkman](https://sdkman.io/install)
 
-- follow the instructions from [the official web page](https://sdkman.io/install)
-
-    ```bash
-    curl -s "https://get.sdkman.io" | bash
-    ```
+```bash
+curl -s "https://get.sdkman.io" | bash
+```
 
 ## Java
+
 ```bash
 sdk install java 11.0.15-zulu
 ```
