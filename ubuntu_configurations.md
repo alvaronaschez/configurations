@@ -64,7 +64,19 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Verify that Docker Engine is installed correctly by running the hello-world image.
 sudo docker run hello-world
+
+# Manage Docker as a non-root user:
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+# restart session
+
+# Verify that Docker Engine is working without root access
+docker run hello-world
 ```
+
+
 
 ## Chrome
 
