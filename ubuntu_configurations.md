@@ -287,3 +287,14 @@ sudo snap install spotify
 ```bash
 sudo snap install telegram-desktop
 ```
+
+## Discord
+
+- Download and install the .deb file from https://discord.com/download
+
+## ZSA Moonlander
+
+- https://configure.zsa.io/moonlander
+
+- https://github.com/zsa/wally/wiki/Linux-install
+
