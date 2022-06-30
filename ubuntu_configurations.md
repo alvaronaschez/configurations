@@ -298,3 +298,8 @@ sudo snap install telegram-desktop
 
 - https://github.com/zsa/wally/wiki/Linux-install
 
+## Lazy Docker
+- https://github.com/jesseduffield/lazydocker#installation
+```bash
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+```
