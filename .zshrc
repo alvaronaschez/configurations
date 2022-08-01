@@ -25,3 +25,13 @@ eval "$(pyenv init --path)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# poetry
+export PATH="/home/alvaro/.local/bin:$PATH"
+
+
+# phpenv
+export PHPENV_ROOT="/home/alvaro/.phpenv"
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi

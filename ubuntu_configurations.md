@@ -303,3 +303,25 @@ sudo snap install telegram-desktop
 ```bash
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
+
+## [phpenv](https://github.com/phpenv/phpenv)
+- https://github.com/phpenv/phpenv-installer
+- Run the installation script:
+```bash
+curl -L https://raw.githubusercontent.com/phpenv/phpenv-installer/master/bin/phpenv-installer \
+    | bash
+```
+- Follow the instructions in order to add the executable to the path:
+```bash
+WARNING
+ |  # Seems you still have not added 'phpenv' to the load path.
+ |  
+ |  # Load phpenv automatically by adding
+ |  # the following to ~/.zshrc:
+
+export PHPENV_ROOT="/home/alvaro/.phpenv"
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi
+```
