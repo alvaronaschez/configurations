@@ -1,0 +1,1 @@
+diff ../.zshrc ~/.zshrc

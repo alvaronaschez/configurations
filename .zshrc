@@ -15,6 +15,7 @@ alias tree2='tree --dirsfirst -F -L 2'
 alias tree3='tree --dirsfirst -F -L 3'
 alias tree4='tree --dirsfirst -F -L 4'
 alias tree5='tree --dirsfirst -F -L 5'
+alias docker-compose='docker compose'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv" 
