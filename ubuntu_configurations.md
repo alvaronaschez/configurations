@@ -304,24 +304,56 @@ sudo snap install telegram-desktop
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
 
-## [phpenv](https://github.com/phpenv/phpenv)
-- https://github.com/phpenv/phpenv-installer
-- Run the installation script:
-```bash
-curl -L https://raw.githubusercontent.com/phpenv/phpenv-installer/master/bin/phpenv-installer \
-    | bash
-```
-- Follow the instructions in order to add the executable to the path:
-```bash
-WARNING
- |  # Seems you still have not added 'phpenv' to the load path.
- |  
- |  # Load phpenv automatically by adding
- |  # the following to ~/.zshrc:
+## [PHPBrew](https://github.com/phpbrew/phpbrew)
 
-export PHPENV_ROOT="/home/alvaro/.phpenv"
-if [ -d "${PHPENV_ROOT}" ]; then
-  export PATH="${PHPENV_ROOT}/bin:${PATH}"
-  eval "$(phpenv init -)"
-fi
+- install [dependencies](https://github.com/phpbrew/phpbrew/wiki/Requirement):
+- Ubuntu 22.04
+```bash
+sudo apt-get install -y \
+  build-essential \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  libcurl4-gnutls-dev \
+  libzip-dev \
+  libssl-dev \
+  libxml2-dev \
+  libxslt-dev \
+  php8.1-cli \
+  php8.1-bz2 \
+  pkg-config
+```
+- Ubuntu 20.04
+```bash
+sudo apt-get install -y \
+  build-essential \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  libcurl4-gnutls-dev \
+  libzip-dev \
+  libssl-dev \
+  libxml2-dev \
+  libxslt-dev \
+  php7.4-cli \
+  php7.4-bz2 \
+  pkg-config
+```
+```bash
+curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
+chmod +x phpbrew.phar
+# Move the file to some directory within your $PATH
+sudo mv phpbrew.phar /usr/local/bin/phpbrew
+```
+
+Init a bash script for your shell environment:
+
+```bash
+phpbrew init
+```
+
+Add these lines to your `.bashrc` or `.zshrc` file:
+
+```bash
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 ```
