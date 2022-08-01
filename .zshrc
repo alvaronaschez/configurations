@@ -28,7 +28,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # poetry
 export PATH="/home/alvaro/.local/bin:$PATH"
 
-
 # phpenv
 export PHPENV_ROOT="/home/alvaro/.phpenv"
 if [ -d "${PHPENV_ROOT}" ]; then
