@@ -1,5 +1,9 @@
 # UBUNTU CONFIGURATIONS
 
+## Some useful links
+- [Oryx: The ZSA Keyword Configurator](https://configure.zsa.io/moonlander/layouts/55l6E/latest/0)
+- [Library Genesis+](https://libgen.gs/)
+
 ## VSCode
 
 - Download and install the `.deb` file from https://code.visualstudio.com/

@@ -6,6 +6,7 @@
 !/.tmux.conf
 !/ubuntu_configurations.md
 !/scripts
+!/vs-code-extensions.txt
 
 # ignore everything under .vim folder except autoload/plug.vim
 /.vim/*
