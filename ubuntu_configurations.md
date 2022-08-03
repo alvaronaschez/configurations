@@ -1,12 +1,13 @@
 # UBUNTU CONFIGURATIONS
 
 ## Some useful links
+
 - [Oryx: The ZSA Keyword Configurator](https://configure.zsa.io/moonlander/layouts/55l6E/latest/0)
 - [Library Genesis+](https://libgen.gs/)
 
 ## VSCode
 
-- Download and install the `.deb` file from https://code.visualstudio.com/
+- Download and install the `.deb` file from <https://code.visualstudio.com/>
 - File > Preferences > Keyboard Shortcuts > View: Toggle Terminal > Ctrl + Escape
 
 ## Git
@@ -28,6 +29,7 @@ ssh-keygen -t rsa -C "your-email-address"
 # print new generated public key
 cat ~/.ssh/id_rsa.pub
 ```
+
 - add the new ssh public key to GitHub, GitLab, Bitbucket, etc
 
 ## clone some repos
@@ -80,12 +82,9 @@ newgrp docker
 docker run hello-world
 ```
 
-
-
 ## Chrome
 
 - Download the `.deb` file from [the official website](https://www.google.com/chrome/) and install it (with double click)
-
 
 ## Slack
 
@@ -106,6 +105,7 @@ curl https://pyenv.run | bash
 ```
 
 - Copy the following lines at the end of `.bashrc` and `.zshrc` files:
+
     ```bash
     # pyenv
     export PYENV_ROOT="$HOME/.pyenv"
@@ -116,12 +116,13 @@ curl https://pyenv.run | bash
 - restart the terminal
 
 - Some useful links:
-    - https://github.com/pyenv/pyenv#installation
-    - https://github.com/pyenv/pyenv-installer
-    - https://github.com/pyenv/pyenv/wiki#suggested-build-environment
-    - https://github.com/pyenv/pyenv/wiki/Common-build-problems
+  - <https://github.com/pyenv/pyenv#installation>
+  - <https://github.com/pyenv/pyenv-installer>
+  - <https://github.com/pyenv/pyenv/wiki#suggested-build-environment>
+  - <https://github.com/pyenv/pyenv/wiki/Common-build-problems>
 
 - Some useful commands:
+
     ```bash
     # list available python versions
     pyenv install --list
@@ -132,7 +133,6 @@ curl https://pyenv.run | bash
     # set python 3.10.4 as global version
     pyenv global 3.10.4
     ```
-
 
 ## [Poetry](https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
@@ -174,6 +174,7 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install zsh
 chsh -s $(which zsh)
 ```
+
 - restart the computer
 - Ohmyzsh vs .zshrc ??
 
@@ -185,7 +186,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ## Pgadmin4
 
-- https://www.pgadmin.org/download/pgadmin-4-apt/
+- <https://www.pgadmin.org/download/pgadmin-4-apt/>
 
 ```bash
 #
@@ -239,7 +240,7 @@ sdk install java 11.0.15-zulu
 
 ## [Leiningen](https://leiningen.org/)
 
-```
+```bash
 # requires java
 sdk install leiningen
 ```
@@ -263,6 +264,7 @@ sudo apt-get install esl-erlang
 # Install Elixir:
 sudo apt-get install elixir
 ```
+
 ## Postman
 
 ```bash
@@ -271,13 +273,14 @@ sudo snap install postman
 
 ## Insomnia
 
-- Download and install the .deb file from https://insomnia.rest/download
+- Download and install the .deb file from <https://insomnia.rest/download>
 
 ## Gnome Tweak
 
 ```bash
 sudo apt install gnome-tweak-tool
 ```
+
 - Tweaks > General > Suspend when laptop lid is closed > off
 
 ## Spotify
@@ -294,16 +297,18 @@ sudo snap install telegram-desktop
 
 ## Discord
 
-- Download and install the .deb file from https://discord.com/download
+- Download and install the .deb file from <https://discord.com/download>
 
 ## ZSA Moonlander
 
-- https://configure.zsa.io/moonlander
+- <https://configure.zsa.io/moonlander>
 
-- https://github.com/zsa/wally/wiki/Linux-install
+- <https://github.com/zsa/wally/wiki/Linux-install>
 
 ## Lazy Docker
-- https://github.com/jesseduffield/lazydocker#installation
+
+- <https://github.com/jesseduffield/lazydocker#installation>
+
 ```bash
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
@@ -312,6 +317,7 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 - install [dependencies](https://github.com/phpbrew/phpbrew/wiki/Requirement):
 - Ubuntu 22.04
+
 ```bash
 sudo apt-get install -y \
   build-essential \
@@ -327,7 +333,9 @@ sudo apt-get install -y \
   php8.1-bz2 \
   pkg-config
 ```
+
 - Ubuntu 20.04
+
 ```bash
 sudo apt-get install -y \
   build-essential \
@@ -343,6 +351,7 @@ sudo apt-get install -y \
   php7.4-bz2 \
   pkg-config
 ```
+
 ```bash
 curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
 chmod +x phpbrew.phar
