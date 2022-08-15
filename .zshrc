@@ -17,6 +17,9 @@ alias tree4='tree --dirsfirst -F -L 4'
 alias tree5='tree --dirsfirst -F -L 5'
 alias docker-compose='docker compose'
 
+# go
+export PATH=$PATH:/usr/local/go/bin
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv" 
 export PATH="$PYENV_ROOT/bin:$PATH" 

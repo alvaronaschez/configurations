@@ -370,3 +370,26 @@ Add these lines to your `.bashrc` or `.zshrc` file:
 ```bash
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 ```
+
+## [Go](https://go.dev/doc/install)
+
+- Download the tar file.
+
+- Untar the tar file in `/usr/local`:
+```bash
+tar -xvf go1.19.linux-amd64.tar.gz
+
+sudo mv go /usr/local
+```
+
+- Copy the following lines at the end of `.bashrc` and `.zshrc` files:
+```bash
+export PATH=$PATH:/usr/local/go/bin
+```
+
+- Restart the terminal, to take effect.
+
+- Verify:
+```bash
+go version
+```
