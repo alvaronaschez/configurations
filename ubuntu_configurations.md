@@ -376,6 +376,7 @@ Add these lines to your `.bashrc` or `.zshrc` file:
 - Download the tar file.
 
 - Untar the tar file in `/usr/local`:
+
 ```bash
 tar -xvf go1.19.linux-amd64.tar.gz
 
@@ -383,6 +384,7 @@ sudo mv go /usr/local
 ```
 
 - Copy the following lines at the end of `.bashrc` and `.zshrc` files:
+
 ```bash
 export PATH=$PATH:/usr/local/go/bin
 ```
@@ -390,6 +392,21 @@ export PATH=$PATH:/usr/local/go/bin
 - Restart the terminal, to take effect.
 
 - Verify:
+
 ```bash
 go version
+```
+
+## [go repl](https://github.com/x-motemen/gore)
+
+- add this line at the end of your `.zshrc` file:
+
+```bash
+export PATH="$PATH:$HOME/go/bin"
+```
+
+- install `gore` repl:
+
+```bash
+go install github.com/x-motemen/gore/cmd/gore@latest
 ```

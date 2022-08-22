@@ -30,7 +30,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # poetry
-export PATH="/home/alvaro/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+export PATH="$PATH:$HOME/go/bin"
+
