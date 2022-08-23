@@ -8,6 +8,9 @@ nnoremap ; :
 "" Plugins
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
+Plug 'sainnhe/everforest'
+Plug 'sainnhe/gruvbox-material'
+Plug 'ayu-theme/ayu-vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
@@ -47,7 +50,8 @@ autocmd GUIEnter * set visualbell t_vb=
 set termguicolors
 set t_Co=256 " Enable 256 colors palette
 set background=dark
-colorscheme nord
+let ayucolor='mirage'
+colorscheme ayu
 syntax on
 "syntax enable
 
