@@ -7,12 +7,12 @@ nnoremap ; :
 
 "" Plugins
 call plug#begin()
-Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim' 
-Plug 'jmcantrell/vim-virtualenv'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'natebosch/vim-lsc'
+Plug 'jmcantrell/vim-virtualenv'
 call plug#end()
 
 let g:lsc_server_commands = {'python': 'pylsp'}
