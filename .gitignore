@@ -8,6 +8,7 @@
 !/scripts
 !vs-code-extensions.txt
 !Makefile
+!bookmarks*.html
 
 # ignore everything under .vim folder except autoload/plug.vim
 /.vim/*
