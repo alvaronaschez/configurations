@@ -414,3 +414,7 @@ go install github.com/x-motemen/gore/cmd/gore@latest
 ## [ASDF](https://asdf-vm.com/)
 
 asdf Manage multiple runtime versions with a single CLI tool
+
+## [DBeaver](https://dbeaver.io/)
+
+Free multi-platform database tool
