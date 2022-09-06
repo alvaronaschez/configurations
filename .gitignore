@@ -5,6 +5,7 @@
 !/.vim
 !/.tmux.conf
 !/ubuntu-configurations.md
+!/ubuntu-configurations-old.md
 !/scripts
 !vs-code-extensions.txt
 !Makefile
