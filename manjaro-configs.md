@@ -4,9 +4,20 @@
 
 ```zsh
 sudo pacman -S docker docker-compose
+sudo pacman -S lazygit
 # these are going to be probably needed for installing phpbrew, openvpn3, pyenv or others
 # you can skip install them until you really need them
 pacman -S automake unzip zip php pkg-config
+```
+
+## Install these with Yay
+
+yay is a helper for managing aur packages
+
+```zsh
+sudo pacman -S yay
+yay -S openvpn3
+yay -S lazydocker
 ```
 
 ## Install these with Snap
@@ -42,12 +53,6 @@ cat ~/.ssh/id_rsa.pub
 
 VSCode > File > Preferences > Keyboard Shortcuts > View: Toggle Terminal > Ctrl + Escape
 
-## Some dependencies you would need for installing phpbrew, openvpn3 or pyenv
-
-```zsh
-
-```
-
 ## Phpbrew, Pyenv, Sdkman, Poetry
 
 ```zsh
@@ -73,29 +78,14 @@ eval "$(pyenv init -)"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 ```
 
-## Openvpn3
-
-```zsh
-sudo pacman -S yay
-sudo yay -S openvpn3
-```
-
 ## clone some repos
 
 ```bash
-cd ~Wit
+cd ~
 git clone git@github.com:alvaronaschez/configurations.git configs
 git clone git@github.com:alvaronaschez/books.git
 mkdir ~/ws && cd ~/ws
 git clone git@github.com:alvaronaschez/wallpapers.git
-```
-
-## Lazy Docker
-
-- <https://github.com/jesseduffield/lazydocker#installation>
-
-```bash
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
 
 ## Some useful links
