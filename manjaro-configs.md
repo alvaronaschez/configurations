@@ -2,7 +2,7 @@
 
 ## Install these with Pacman
 
-```zsh
+```sh
 sudo pacman -S docker docker-compose
 sudo pacman -S lazygit
 # these are going to be probably needed for installing phpbrew, openvpn3, pyenv or others
@@ -14,7 +14,7 @@ pacman -S automake unzip zip php pkg-config
 
 yay is a helper for managing aur packages
 
-```zsh
+```sh
 sudo pacman -S yay
 yay -S openvpn3
 yay -S lazydocker
@@ -22,7 +22,7 @@ yay -S lazydocker
 
 ## Install these with Snap
 
-```bash
+```sh
 sudo snap install vscode
 sudo snap install dbeaver-ce
 sudo snap install slack --classic
@@ -40,7 +40,7 @@ git config --global user.email "alvaro.sanchez@fakemail.com"
 
 ## ssh
 
-```zsh
+```sh
 # generate ssh key
 ssh-keygen -t rsa -C "your-email-address"
 # print new generated public key
@@ -55,7 +55,7 @@ VSCode > File > Preferences > Keyboard Shortcuts > View: Toggle Terminal > Ctrl 
 
 ## Phpbrew, Pyenv, Sdkman, Poetry
 
-```zsh
+```sh
 curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
 chmod +x phpbrew.phar
 
@@ -68,7 +68,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 add this at the end of your `.zshrc` file:
 
-```zsh
+```sh
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -80,7 +80,7 @@ eval "$(pyenv init -)"
 
 ## clone some repos
 
-```bash
+```sh
 cd ~
 git clone git@github.com:alvaronaschez/configurations.git configs
 git clone git@github.com:alvaronaschez/books.git
