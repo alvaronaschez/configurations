@@ -1,18 +1,18 @@
-/*
-!.gitignore
-!.zshrc
-!.vimrc
-!/.vim
-!/.tmux.conf
-!/ubuntu-configurations.md
-!/ubuntu-configurations-old.md
-!/scripts
-!vs-code-extensions.txt
-!Makefile
-!bookmarks*.html
+# /*
+# !.gitignore
+# !.zshrc
+# !.vimrc
+# !/.vim
+# !/.tmux.conf
+# !/ubuntu-configurations.md
+# !/ubuntu-configurations-old.md
+# !/scripts
+# !vs-code-extensions.txt
+# !Makefile
+# !bookmarks*.html
 
-# ignore everything under .vim folder except autoload/plug.vim
-/.vim/*
-!/.vim/autoload
-/.vim/autoload/*
-!/.vim/autoload/plug.vim
+# # ignore everything under .vim folder except autoload/plug.vim
+# /.vim/*
+# !/.vim/autoload
+# /.vim/autoload/*
+# !/.vim/autoload/plug.vim
