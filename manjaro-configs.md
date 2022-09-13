@@ -53,7 +53,7 @@ cat ~/.ssh/id_rsa.pub
 
 VSCode > File > Preferences > Keyboard Shortcuts > View: Toggle Terminal > Ctrl + Escape
 
-## Phpbrew, Pyenv, Sdkman, Poetry
+## Phpbrew, Pyenv, Sdkman, Poetry, Nvm
 
 ```sh
 curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
@@ -76,6 +76,11 @@ eval "$(pyenv init -)"
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+nvm install node
 ```
 
 ## clone some repos
