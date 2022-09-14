@@ -96,3 +96,9 @@ git clone git@github.com:alvaronaschez/wallpapers.git
 ## Some useful links
 
 - [Library Genesis+](https://libgen.gs/)
+
+### ???
+yay visual-studio-code-bin
+https://github.com/intel/libva/issues/375
+pamac install intel-media-driver
+
