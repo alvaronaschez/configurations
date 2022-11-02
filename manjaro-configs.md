@@ -7,7 +7,7 @@ sudo pacman -S docker docker-compose
 sudo pacman -S lazygit
 # these are going to be probably needed for installing phpbrew, openvpn3, pyenv or others
 # you can skip install them until you really need them
-pacman -S automake unzip zip php pkg-config
+pacman -S automake unzip zip php pkg-config patch
 ```
 
 ## Install these with Yay
@@ -53,7 +53,7 @@ cat ~/.ssh/id_rsa.pub
 
 VSCode > File > Preferences > Keyboard Shortcuts > View: Toggle Terminal > Ctrl + Escape
 
-## Phpbrew, Pyenv, Sdkman, Poetry, Nvm
+## Phpbrew, Pyenv, Sdkman, Poetry, Nvm, Clojure
 
 ```sh
 curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
@@ -81,6 +81,9 @@ eval "$(pyenv init -)"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 nvm install node
+
+# clojure
+sudo pacman -S clojure
 ```
 
 ## clone some repos
@@ -101,4 +104,5 @@ git clone git@github.com:alvaronaschez/wallpapers.git
 yay visual-studio-code-bin
 https://github.com/intel/libva/issues/375
 pamac install intel-media-driver
-
+yay -S slack-desktop
+yay -S lens
